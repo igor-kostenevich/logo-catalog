@@ -299,8 +299,6 @@ if (document.querySelector('.page-menu')) {
 	});
 }
  
-$('.page-menu__body').hide();
-
 $('.page-menu__burger').click(function () {
 	$('.page-menu__body').slideToggle();
 });

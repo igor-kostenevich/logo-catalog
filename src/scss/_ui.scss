@@ -575,12 +575,16 @@ body.ie .ibg img {
 		width: 33px;
 		height: 30px;
 		cursor: pointer;
-		background: url("../../dist/img/icons/page-nav-arrow.svg") 0 0 / 100% no-repeat;
+		background: url("../../dist/img/icons/page-nav-arrow.svg") center no-repeat;
 
 		@media (min-width: 992px) {
 			&:hover {
-				background: url("../../dist/img/icons/sl-arrow-o.svg") 0 0 / 100% no-repeat;
+				background: url("../../dist/img/icons/sl-arrow-o.svg") center no-repeat;
 			}
+		}
+
+		@media (max-width: $md4+px){
+		   display: none;
 		}
 
 		&:last-child {

@@ -731,7 +731,7 @@ body.ie .ibg img {
   width: 33px;
   height: 30px;
   cursor: pointer;
-  background: url("../../dist/img/icons/page-nav-arrow.svg") 0 0/100% no-repeat;
+  background: url("../../dist/img/icons/page-nav-arrow.svg") center no-repeat;
 }
 
 .pagging__arrow:last-child {
@@ -1616,6 +1616,11 @@ textarea.input {
 
 .widgets-footer__column {
   padding: 0 15px;
+  margin: 0px 0px 30px 0px;
+}
+
+.widgets-footer__column:last-child {
+  margin: 0px 0px 0px 0px;
 }
 
 .widgets-footer__column img {
@@ -2737,6 +2742,10 @@ body.lock {
   height: 16px;
 }
 
+.page-menu__body {
+  display: none;
+}
+
 .page-menu__list > li {
   border-bottom: 1px solid #1aa7b9;
 }
@@ -3432,27 +3441,6 @@ body.lock {
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
   }
-
-  .navi-catalog {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-
-  .show-catalog {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
 }
 
 @media (min-width: 560px) {
@@ -3480,6 +3468,29 @@ body.lock {
   .block-footer__phones {
     padding: 0px 0px 0px 35px;
     background: url("../../dist/img/icons/footer-phone.png") left no-repeat;
+  }
+}
+
+@media (min-width: 641px) {
+  .navi-catalog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .show-catalog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -3684,7 +3695,7 @@ body.lock {
   }
 
   .pagging__arrow:hover {
-    background: url("../../dist/img/icons/sl-arrow-o.svg") 0 0/100% no-repeat;
+    background: url("../../dist/img/icons/sl-arrow-o.svg") center no-repeat;
   }
 
   .btn:hover {
@@ -4330,6 +4341,14 @@ body.lock {
     right: -5px;
   }
 
+  .show-catalog {
+    margin: 0px 0px 20px 0px;
+  }
+
+  .show-catalog__label {
+    margin: 0px 20px 10px 0px;
+  }
+
   .content {
     padding: 100px 0px 0px 0px;
   }
@@ -4402,6 +4421,10 @@ body.lock {
 }
 
 @media (max-width: 479.98px) {
+  .pagging__arrow {
+    display: none;
+  }
+
   .item-order__image {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 80px;
